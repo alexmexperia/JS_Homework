@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/less/style.less" type="text/css" rel="stylesheet/less"/>
+    <link href="/css/all.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <script src="/js/less.js" type="text/javascript"></script>
+    <script src="/js/main.js" defer type="text/javascript"></script>  
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+<body class="body__mobile">
+       
+    <header>
+        <div class="header">
+            <div class="header__logo">
+                <img src="/img/logo.png" alt="logo" title="logo">
+            </div>
+
+            <div class="header__menu">
+                <div>
+                    <a href="" class="geo">New York</a>
+                    <i class="fa fa-angle-down"></i>
+                </div>
+                <i class="fas fa-bell"></i>
+                <i class="fa fa-envelope"></i>
+                <a href="" class="user-name">User name</a>
+                <img src="/img/userPhoto.jpeg" alt="user-logo" title="user-logo">
+                <i class="fa fa-search" onclick="slideMin()"></i>			
+            </div>
+        </div>
+
+        
+        
+
+        <div class="header__mobile">  
+            <i class="fa fa-navicon" onclick="showMenu()"></i>         
+           
+
+          
+            <div class="navigation_mobile">
+                <div>
+                    <i class="fa fa-close" onclick="hideMenu()"></i>
+                    <a href="#">Menu item</a>
+                    <a href="#">Menu item</a>
+                    <a href="#">Menu item</a>
+                    <a href="#">Menu item</a>   
+                </div>
+
+               
+                         
+            
+            </div>
+
+            <div>
+                <img src="/img/logo-white.png" class="logo-white" alt="logo white" title="logo white">     
+                <span>Page title</span>
+                <img class="user-PhotoBig" src="/img/userPhotoBig.jpeg">
+                <i class="fa fa-search"></i>
+            </div>  
+            
+     
+        </div>
+    </header>
+    
+    <nav class="nav">
+        <div class="navigation">
+            <ul class="navigation__menu">
+                <li><a href="#">Menu item</a></li>
+                <li><a href="#">Menu item</a></li>
+                <li><a href="#">Menu item</a></li>
+                <li><a href="#">Menu item</a></li>        
+            </ul>
+        </div>
+    </nav>  
+
+    <main>
+       <div class="main">
+            
+            <aside>
+                    <ul>
+                        
+                        <li><a href="#">Submenu item 5d</a></li>
+                        <li><a href="#">Submenu item 5d</a></li>
+                    </ul>
+                    <ul>
+                        <li class="submenu">Submenu</li>
+                        <li><a href="#">Submenu item 5d</a></li>
+                        <li><a href="#">Submenu item 5d</a></li>
+                        <li><a href="#">Submenu item 5d</a></li>
+                        <li><a href="#">Submenu item 5d</a></li>
+                        <li><a href="#">Submenu item 5d</a></li>
+                    </ul>
+                    <ul>
+                        <li class="submenu">Submenu</li>
+                        <li><a href="#">Submenu item 5d</a></li>
+                        <li><a href="#">Submenu item 5d</a></li>
+                        <li><a href="#">Submenu item 5d</a></li>
+                        <li><a href="#">Submenu item 5d</a></li>
+                        <li><a href="#">Submenu item 5d</a></li>
+                        <li><a href="#">Submenu item 5d</a></li>
+                        <li><a href="#">Submenu item 5d</a></li>
+                    </ul>
+
+                    
+
+            </aside>
+
+            <section class="feedback">
+                <div class="feedback__title">
+                    <h1>Page title in <span class="geo">New York </span><i class="fa fa-angle-down"></i></h1>
+                </div>
+                <div class="feedback__form">  
+                    <div class="item-field fasearch">
+                        <i class="fa fa-search" id="fa-search"></i>
+                    </div>
+                    <form>
+                        <input type="text" id="t1" placeholder="Search ...">	
+                    </form>
+                   
+                    <div class="item-field">
+                        
+                        <i class="fa fa-plus"></i>
+                        <span>+ New Item</span>
+                        <i class="fa fa-sliders"></i>
+                    </div>
+                </div>
+
+                <section class="content">
+                    <div class="feedback__comment">
+                        <div class="feedback__comment__avatar">
+                            <img src="/img/photo1.jpeg" alt="username1" title="username">
+                        </div>
+                        <div class="feedback__comment__content">
+                            <div class="comment__data">
+                                    <div class="comment__block">
+                                        <div class="comment__username_grey">User name</div>
+                                        <div class="comment__status_grey">Pro</div>
+                                    </div>
+                                    <div class="comment__statistics">
+                                        <span><i class="fa fa-comments"></i> 20</span>
+                                        <span><i class="fa fa-clock"></i> 20</span>
+                                    </div>
+                            </div>
+                            <div class="comment__title_blue">Item title 1</div>
+                            <div class="comment__content">Suspendisse potenti. Duis imperdiet ex non leo condimentum efficitur. Sed rhoncus eleifend lacus sit amet faucibus. Nunc semper nisl a dolor pretium dapibus quis quis lacus. Nulla faucibus viverra laoreet. Fusce in scelerisque magna. Duis porta erat vitae lectus lacinia tempus.</div>
+                            <div class="comment__tags"><i class="fa fa-tag"></i> tag1 tag2 tag3</div>
+                        </div>
+                    </div>
+
+                    <div class="feedback__comment">
+                        <div class="feedback__comment__avatar">
+                            <img src="/img/photo2.jpeg" alt="username2" title="username">
+                        </div>
+                        <div class="feedback__comment__content">
+                            <div class="comment__data">
+                                    <div class="comment__block">
+                                        <div class="comment__username_grey">User name</div>
+                                        <div class="comment__status_grey">Member</div>
+                                    </div>
+                                    <div class="comment__statistics">
+                                        <span><i class="fa fa-comments"></i> 20</span>
+                                        <span><i class="fa fa-clock"></i> 20</span>
+                                    </div>
+                            </div>
+                            <div class="comment__title_blue">Item title 1</div>
+                            <div class="comment__content">Suspendisse potenti. Duis imperdiet ex non leo condimentum efficitur. Sed rhoncus eleifend lacus sit amet faucibus. Nunc semper nisl a dolor pretium dapibus quis quis lacus. Nulla faucibus viverra laoreet. Fusce in scelerisque magna. Duis porta erat vitae lectus lacinia tempus.</div>
+                            <div class="comment__tags"><i class="fa fa-tag"></i> tag1 tag2 tag3</div>
+                        </div>
+                    </div>
+
+                    <div class="feedback__comment">
+                        <div class="feedback__comment__avatar">
+                            <img src="/img/photo3.jpeg" alt="username3" title="username">
+                        </div>
+                        <div class="feedback__comment__content">
+                            <div class="comment__data">
+                                    <div class="comment__block">
+                                        <div class="comment__username_grey">User name</div>
+                                        <div class="comment__status_grey">Member</div>
+                                    </div>
+                                    <div class="comment__statistics">
+                                        <span><i class="fa fa-comments"></i> 20</span>
+                                        <span><i class="fa fa-clock"></i> 20</span>
+                                    </div>
+                            </div>
+                            <div class="comment__title_blue">Item title 1</div>
+                            <div class="comment__content">Suspendisse potenti. Duis imperdiet ex non leo condimentum efficitur. Sed rhoncus eleifend lacus sit amet faucibus. Nunc semper nisl a dolor pretium dapibus quis quis lacus. Nulla faucibus viverra laoreet. Fusce in scelerisque magna. Duis porta erat vitae lectus lacinia tempus.</div>
+                            <div class="comment__tags"><i class="fa fa-tag"></i> tag1 tag2 tag3</div>
+                        </div>
+                    </div>
+
+                    <div class="feedback__comment">
+                        <div class="feedback__comment__avatar">
+                            <img src="/img/photo4.jpeg" alt="username4" title="username">
+                        </div>
+                        <div class="feedback__comment__content">
+                            <div class="comment__data">
+                                    <div class="comment__block">
+                                        <div class="comment__username_grey">User name</div>
+                                        <div class="comment__status_grey">Member</div>
+                                    </div>
+                                    <div class="comment__statistics">
+                                        <span><i class="fa fa-comments"></i> 20</span>
+                                        <span><i class="fa fa-clock"></i> 20</span>
+                                    </div>
+                            </div>
+                            <div class="comment__title_blue">Item title 1</div>
+                            <div class="comment__content">Suspendisse potenti. Duis imperdiet ex non leo condimentum efficitur. Sed rhoncus eleifend lacus sit amet faucibus. Nunc semper nisl a dolor pretium dapibus quis quis lacus. Nulla faucibus viverra laoreet. Fusce in scelerisque magna. Duis porta erat vitae lectus lacinia tempus.</div>
+                            <div class="comment__tags"><i class="fa fa-tag"></i> tag1 tag2 tag3</div>
+                        </div>
+                    </div>               
+                </section>
+                <section class="button">
+                    <a href="#"><i class="fa fa-angle-left"></i> Previous </i></a>
+                    <a href="#"> Next <i class="fa fa-angle-right"></i></a>
+                </section>
+                <footer>
+                    <div class="footer__menu">
+                        <ul>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Policies</a></li>
+                                <li><a href="#">Site map</a></li>
+                                <li><a href="#">Help</a></li>
+                                <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </div>
+                   <div class="footer__info">
+                    
+                        <div class="footer__logo">
+                            <img src="/img/logo-min.png" alt="logo-min" title="logo-min">
+                        </div>
+                   
+                         <div class="footer__copyright">© 2015. Qulix Systems. All rights reserved.</div>
+                   </div>
+                </footer>
+
+
+            </section>
+
+            
+       </div>
+    </main>
+    
+</body>
+</html>
