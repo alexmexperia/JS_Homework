@@ -8,53 +8,27 @@ function getPositiveNumbersArr(numbers) {
 
 //----------------------Task 2--------------------
 function getFirstPositiveInArray(arr) {
-   var positive = 0;
-
-   arr.some (function (item, i) {
-        if (item > 0) {
-            positive = item;
-            return item;
-        }
-    });
-   
- return positive;
-}
+    var positive = 0;
+ 
+    arr.reverse().forEach (function (item, i,arr) {
+         if (item > 0) {
+             positive = item;
+         }
+         return item;
+     });  
+  return positive;
+ }
 
 //----------------------Task 3--------------------
 function isPalindrome(word) {
-    var start = 0;
-    var end = word.length-1;
-
-    while (start != end) {
-
-        if (word[start].toLowerCase() != word[end].toLowerCase()) {
-            return false;
-        }
-        start++;
-        end--;
-    }
-    return true;
+    return word.toLowerCase() == word.split('').reverse().join('').toLowerCase();   
 }
 
 //----------------------Task 4--------------------
 function isAnagram(firstWord, secondWord) {
-    firstWord = firstWord.toLowerCase();
-    secondWord = secondWord.toLowerCase();
-    ln = firstWord.length;
-
-    if (firstWord.length != secondWord.length) {
-        return false;
-    }
-
-    for (var i = 0; i < ln; i++) {
-
-       if (secondWord.indexOf(firstWord[i]) >= 0) {
-           secondWord=secondWord.replace(firstWord[i],'');
-       } else {
-           return false;
-       }
-    }
-return true;
+    firstWord = firstWord.toLowerCase().split('').sort().join('');
+    secondWord = secondWord.toLowerCase().split('').sort().join('');
+    return firstWord == secondWord;
 }
 
 //----------------------Task 5--------------------
