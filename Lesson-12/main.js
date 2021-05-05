@@ -96,8 +96,7 @@ function getMostFrequencyWord(text) {
             word = key;
             quantity = obj[key];
         }
-    }
-    
+    }  
     console.log('Максимальное число повторений у слова '+word+' - '+quantity);
 }
 
