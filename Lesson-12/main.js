@@ -1,27 +1,28 @@
 //----------------------Task 1--------------------
 function getObjectArray(arr) {
-    var newArray = [];
-    arr.forEach(function(item, i, arr) {
-        var obj = {};
+    var newArray = arr.map(function(item, i, arr) {
+        var obj ={};
         obj.name = item;
-        newArray[i] = obj;
+        return obj;
     });
     return newArray;   
 }
 
+var arr = ['Vasya','Petya','Sasha','Lesha'];
+console.log(getObjectArray(arr));
+
 //----------------------Task2--------------------
 function getCurrentTime (arr) {
-    var currentTime = '';
-    arr.forEach(function(item, i, arr) {
 
-        if (i <arr.length-1) {
-            currentTime += item + ' : '
-        } else {
-            currentTime += item +'\"';
-        }
+    var currentTime = arr.reduce(function (prev,item,i,arr) {
+        return prev+' : '+item;
     });
-    return 'Текущее время : '+currentTime;
+ 
+    return 'Текущее время : ' + currentTime +'\"';
 }
+
+var arrTime = ['00', '13', '24'];
+console.log(getCurrentTime (arrTime));
 
 //----------------------Task 3--------------------
 function getVowelQantity(str) {
@@ -39,6 +40,9 @@ function getVowelQantity(str) {
     });
     return quantityVowel;
 }
+
+var vowel = 'студент';
+console.log (getVowelQantity(vowel));
 
 //----------------------Task 4--------------------
 function getTextInfo(text) {
@@ -62,6 +66,9 @@ function getTextInfo(text) {
     }
 }
 
+var str= 'Привет, студент! Студент... Как дела, студент?';
+getTextInfo(str);
+
 //----------------------Task 5--------------------
 function getMostFrequencyWord(text) {
     var textArray = text.split(/[.!?,:-\s]/);
@@ -74,14 +81,14 @@ function getMostFrequencyWord(text) {
     var quantity;
 
     textArray.forEach(function (item,i,textArray) {
-        
-        if (!(item in obj) && (item != '')){
-            obj[item] = 1;
+        var str = item.toLowerCase();
+        if (!(str in obj) && (str != '')){
+            obj[str] = 1;
         } else {
-            obj[item] += 1;
+            obj[str] += 1;
         }
-        word = item;
-        quantity = obj[item];
+        word = str;
+        quantity = obj[str];
     });
     
     for (var key in obj){
@@ -90,5 +97,10 @@ function getMostFrequencyWord(text) {
             quantity = obj[key];
         }
     }
+    
     console.log('Максимальное число повторений у слова '+word+' - '+quantity);
+    console.log(obj);
 }
+
+var str= 'Привет, студент! Студент... Как дела, студент?';
+getMostFrequencyWord(str);
