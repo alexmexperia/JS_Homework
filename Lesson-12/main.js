@@ -99,7 +99,6 @@ function getMostFrequencyWord(text) {
     }
     
     console.log('Максимальное число повторений у слова '+word+' - '+quantity);
-    console.log(obj);
 }
 
 var str= 'Привет, студент! Студент... Как дела, студент?';
