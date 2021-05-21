@@ -12,7 +12,7 @@ container.appendChild(secondPar);
 
 
 button.addEventListener('click', function changeWeightColor() {
-    var firstP = document.getElementsByTagName('p')[0].children;
+    var firstP = firstPar.children;
     for (var i = 0; i < firstP.length; i++) {
         if (firstP[i] = 'a'){
             firstP[i].classList.add('weight-color');
@@ -22,14 +22,12 @@ button.addEventListener('click', function changeWeightColor() {
 
 localStorage.clear();
 
-var secondP = document.getElementsByTagName('p')[1];
 
-secondP.onclick = function(event) {
+secondPar.onclick = function(event) {
     var target = event.target;
 
     if (target.tagName == 'A') {   
-        alert(target.href);
-
+        ч 
         if (!localStorage.getItem(target.text)) {
             var obj = {};
             obj.path =''+ target.href;
@@ -41,11 +39,7 @@ secondP.onclick = function(event) {
         }
         return false;
     }
-
-    for (var i = 0; i < secondP.children.length; i++) {
-        if (secondP.children[i] = 'a'){
-            secondP.children[i].classList.add('weight-color');
-        }
-    }
+    secondPar.children[0].classList.add('weight-color');
+    secondPar.children[1].classList.add('weight-color');
 }
 
