@@ -13,7 +13,7 @@ yField.addEventListener('keyup', enableCreateBtn);
 
 btnCreate.addEventListener('mousedown', function(event){
 
-    if (!Number.isInteger(+xField.value)) {
+    if (!((+xField.value) % 1 == 0)) {
         alert ('Incorrect X format. Please enter integer number');
         xField.value = '';
         btnCreate.disabled=true;
@@ -24,7 +24,7 @@ btnCreate.addEventListener('mousedown', function(event){
                 btnCreate.disabled=true;
             }
 
-    if (!Number.isInteger(+yField.value)) {
+    if (!((+yField.value) % 1 == 0)) {
         alert ('Incorrect Y format. Please enter integer number');
         yField.value = '';
         btnCreate.disabled=true;
