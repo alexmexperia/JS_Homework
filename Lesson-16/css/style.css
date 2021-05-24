@@ -1,0 +1,56 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color:red;
+}
+button{
+    color:white;
+}
+.field{
+    width: 70%;
+}
+.nav {
+    overflow: hidden;
+} 
+.nav .nav-button {
+     float: left;
+    border: none;
+    border-radius: 15px 15px 0px 0px;
+    margin:0px 10px 0px 0px;
+    outline: none;
+    padding: 10px 30px;
+    transition: 0.3s;      
+
+     border: 1px solid #4CAF50;
+    border-bottom: none;
+    background-color: rgb(0, 223, 107);
+}
+.nav button:hover {
+    background-color: #d1d1d1;
+    color: black;   
+}
+.get-button{
+    position:fixed;
+    right:15%;
+    padding: 8px 30px;
+    border: 1px solid #4CAF50;
+    background-color: rgb(0, 223, 107);
+}
+.nav-content {
+    background-color: white;
+    padding: 6px 12px;
+    border: 1px solid #4CAF50;    
+    border-radius: 0px 15px 15px 15px;
+    border-top: none;
+    display: none;
+}
+.active{
+    display: flex;   
+    background-color: white!important;
+    color:black;
+}
+img{
+    margin:10px;
+}
