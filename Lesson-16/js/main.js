@@ -4,9 +4,6 @@ var nav = document.getElementsByClassName('nav')[0];
 var field = document.getElementsByClassName('field')[0];
 var btnNav = document.getElementsByClassName('nav')[0];
 
-if (localStorage.getItem('data')){
-    showInfo();
-}
 
 function getUserList(){
     var xhr = new XMLHttpRequest();
@@ -59,8 +56,12 @@ function showInfo(){
 
 btnCreate.onclick = function (){
 
-    if (!localStorage.getItem('data')){
-        getUserList();
+    if (!document.getElementsByClassName('nav-button')[0]) {
+        if (localStorage.getItem('data')){
+            showInfo();
+        } else {
+            getUserList();
+        }
     }
 }
 
